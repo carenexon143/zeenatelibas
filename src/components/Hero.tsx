@@ -14,7 +14,7 @@ export default function Hero() {
         <img
           src={heroImg}
           alt="Luxury Pakistani Fashion Model"
-          className="w-full h-full object-cover object-[center_25%] opacity-80"
+          className="w-full h-full object-cover object-top scale-125 opacity-80"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-emerald/60 via-emerald/20 to-emerald-light/90" />
       </div>

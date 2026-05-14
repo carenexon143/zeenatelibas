@@ -45,7 +45,7 @@ export default function Collections() {
   return (
     <section id="collections" className="py-16 md:py-32 bg-cream">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-start mb-12 md:mb-20">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start mb-12 md:mb-20 text-center md:text-left">
           <div className="max-w-2xl">
             <span className="text-gold text-xs tracking-[0.4em] uppercase mb-4 block">Curated Series</span>
             <h2 className="text-emerald text-3xl md:text-6xl font-serif leading-tight">
