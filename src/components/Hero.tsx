@@ -14,7 +14,7 @@ export default function Hero() {
         <img
           src={heroImg}
           alt="Luxury Pakistani Fashion Model"
-          className="w-full h-full object-cover object-center opacity-80 scale-105"
+          className="w-full h-full object-cover object-[center_25%] opacity-80"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-emerald/60 via-emerald/20 to-emerald-light/90" />
       </div>
@@ -36,7 +36,6 @@ export default function Hero() {
             Couture Excellence
           </span>
           <h1 className="text-white text-5xl md:text-8xl font-serif leading-tight mb-6 drop-shadow-lg">
-            Elegance is <br />
             <span className="italic font-light">Coming Soon</span>
           </h1>
           <p className="text-white/80 text-xs md:text-lg max-w-2xl mx-auto mb-10 font-sans tracking-[0.05em] leading-relaxed uppercase">
