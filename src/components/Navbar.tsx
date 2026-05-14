@@ -25,6 +25,9 @@ export default function Navbar() {
           alt="Zeenat-E-Libas Logo" 
           className="h-12 md:h-16 w-auto object-contain" 
         />
+        <span className="text-gold font-serif italic text-[8px] md:text-xs tracking-[0.2em] mt-2 whitespace-nowrap">
+          Khubsurti Ka Naya Naam
+        </span>
       </div>
 
       <div className="flex-1 flex items-center justify-end gap-8">
