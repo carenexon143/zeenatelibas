@@ -37,10 +37,12 @@ export default function Footer() {
 
           <div className="w-24 md:w-full h-px bg-white/10 mb-8" />
 
-          <div className="flex flex-col md:flex-row justify-between items-center w-full gap-6 md:gap-8 text-center">
-            <span className="text-white/40 text-[10px] tracking-[0.4em] uppercase order-2 md:order-1">© 2026 Zeenat-E-Libas</span>
-            <span className="text-gold italic font-serif text-2xl md:text-xl order-1 md:order-2 mb-2 md:mb-0">Apka Libas Apki Zeenat</span>
-            <span className="text-white/40 text-[10px] tracking-[0.3em] uppercase order-3">Developed by CareNexon</span>
+          <div className="flex flex-col items-center w-full gap-4 text-center">
+            <span className="text-gold italic font-serif text-2xl md:text-3xl mb-4">Apka Libas Apki Zeenat</span>
+            <div className="flex flex-col md:flex-row gap-4 md:gap-4 text-white/40 text-[10px] tracking-[0.4em] uppercase">
+              <span>© 2026 Zeenat-E-Libas</span>
+              <span>Developed by CareNexon</span>
+            </div>
           </div>
         </div>
       </div>
