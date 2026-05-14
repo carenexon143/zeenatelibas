@@ -14,7 +14,7 @@ export default function Hero() {
         <img
           src={heroImg}
           alt="Luxury Pakistani Fashion Model"
-          className="w-full h-full object-cover object-top scale-125 opacity-80"
+          className="w-full h-full object-cover object-top md:object-[center_30%] opacity-80"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-emerald/60 via-emerald/20 to-emerald-light/90" />
       </div>
@@ -32,13 +32,25 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.5 }}
           className="max-w-4xl"
         >
-          <span className="text-gold font-serif italic text-lg md:text-2xl mb-2 block tracking-wide">
+          <span className="text-gold font-serif italic text-base md:text-xl mb-2 block tracking-wide">
             Couture Excellence
           </span>
-          <h1 className="text-white text-5xl md:text-8xl font-serif leading-tight mb-6 drop-shadow-lg">
-            <span className="italic font-light">Coming Soon</span>
+          <h1 className="text-white text-5xl md:text-9xl font-serif leading-tight mb-6 drop-shadow-2xl">
+            <motion.span 
+              animate={{ 
+                backgroundPosition: ['0% center', '200% center'],
+              }}
+              transition={{ 
+                duration: 5, 
+                repeat: Infinity, 
+                ease: "linear" 
+              }}
+              className="italic font-light bg-gradient-to-r from-white via-gold/70 to-white bg-[length:200%_auto] bg-clip-text text-transparent block"
+            >
+              Coming Soon
+            </motion.span>
           </h1>
-          <p className="text-white/80 text-xs md:text-lg max-w-2xl mx-auto mb-10 font-sans tracking-[0.05em] leading-relaxed uppercase">
+          <p className="text-white/80 text-[10px] md:text-base max-w-2xl mx-auto mb-10 font-sans tracking-[0.05em] leading-relaxed">
             A premium ladies clothing experience crafted with style, grace, and timeless fashion. Discover the artistry of Zeenat-e-Libas.
           </p>
 
@@ -46,7 +58,7 @@ export default function Hero() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-10 py-4 bg-gold text-emerald font-semibold tracking-[0.2em] uppercase text-sm rounded-none shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] transition-all"
+              className="px-6 py-3 md:px-10 md:py-4 bg-gold text-emerald font-semibold tracking-[0.2em] uppercase text-[10px] md:text-sm rounded-none shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] transition-all"
             >
               Launching Soon
             </motion.button>

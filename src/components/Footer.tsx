@@ -8,16 +8,16 @@ import logo from '../images/logo.png';
 
 export default function Footer() {
   return (
-    <footer className="bg-emerald-light py-10 md:py-20 border-t border-white/5">
+    <footer className="bg-emerald-light py-8 md:py-16 border-t border-white/5">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center">
           <img 
             src={logo} 
             alt="Zeenat-E-Libas Logo" 
-            className="h-20 mb-8 object-contain" 
+            className="h-12 mb-6 object-contain" 
           />
           
-          <div className="flex gap-8 mb-16">
+          <div className="flex gap-8 mb-8">
             {[
               { icon: <Instagram className="w-5 h-5" />, label: 'Instagram', href: 'https://www.instagram.com/zeenatelibas/' },
               { icon: <Facebook className="w-5 h-5" />, label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61589598127030' }
@@ -35,12 +35,12 @@ export default function Footer() {
             ))}
           </div>
 
-          <div className="w-full h-px bg-white/10 mb-12" />
+          <div className="w-24 md:w-full h-px bg-white/10 mb-8" />
 
-          <div className="flex flex-col md:flex-row justify-between items-center w-full gap-8">
-            <span className="text-white/40 text-[10px] tracking-[0.4em] uppercase">© 2026 Zeenat-E-Libas</span>
-            <span className="text-gold italic font-serif text-xl">Apka Libas Apki Zeenat</span>
-            <span className="text-white/40 text-[10px] tracking-[0.3em] uppercase">Crafted with Elegance</span>
+          <div className="flex flex-col md:flex-row justify-between items-center w-full gap-6 md:gap-8 text-center">
+            <span className="text-white/40 text-[10px] tracking-[0.4em] uppercase order-2 md:order-1">© 2026 Zeenat-E-Libas</span>
+            <span className="text-gold italic font-serif text-2xl md:text-xl order-1 md:order-2 mb-2 md:mb-0">Apka Libas Apki Zeenat</span>
+            <span className="text-white/40 text-[10px] tracking-[0.3em] uppercase order-3">Developed by CareNexon</span>
           </div>
         </div>
       </div>
