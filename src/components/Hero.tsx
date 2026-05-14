@@ -30,15 +30,36 @@ export default function Hero() {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="w-full"
+          className="max-w-4xl"
         >
-          <h1 className="text-white text-6xl md:text-[10rem] font-serif leading-none mb-0 drop-shadow-2xl tracking-tight uppercase">
-            Coming Soon
+          <span className="text-gold font-serif italic text-lg md:text-2xl mb-2 block tracking-wide">
+            Couture Excellence
+          </span>
+          <h1 className="text-white text-5xl md:text-8xl font-serif leading-tight mb-6 drop-shadow-lg">
+            Elegance is <br />
+            <span className="italic font-light">Coming Soon</span>
           </h1>
+          <p className="text-white/80 text-xs md:text-lg max-w-2xl mx-auto mb-10 font-sans tracking-[0.05em] leading-relaxed uppercase">
+            A premium ladies clothing experience crafted with style, grace, and timeless fashion. Discover the artistry of Zeenat-e-Libas.
+          </p>
+
+          <div className="flex items-center justify-center">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-10 py-4 bg-gold text-emerald font-semibold tracking-[0.2em] uppercase text-sm rounded-none shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] transition-all"
+            >
+              Launching Soon
+            </motion.button>
+          </div>
         </motion.div>
       </div>
 
-
+      {/* Floating particles (simplified as decorative dots) */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
+        <div className="w-px h-20 bg-gradient-to-b from-white/0 to-gold animate-bounce" />
+        <span className="text-gold text-[10px] tracking-[0.4em] uppercase mt-4">Scroll</span>
+      </div>
     </div>
   );
 }
